@@ -22,7 +22,7 @@ int selectDataNo(product *p[], int index)
     int num = 0;
     do
     {
-        listProductList(p, index);
+        listProduct(p, index);
 
         printf("번호는 (취소 :0)? ");
         scanf("%d", &num);

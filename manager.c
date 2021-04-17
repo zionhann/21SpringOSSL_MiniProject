@@ -5,7 +5,7 @@
 void listProduct(product *p[], int index)
 {
 	
-	listProduct();
+	printList();
 
     for(int i=0; i<index; i++)
     {
@@ -83,7 +83,7 @@ void searchProductName(product *p[], int index)
     printf("검색할 이름 : ");
     scanf("%s", search);
 
-	listProduct();
+	printList();
 
     for(int i=0;i<index;i++)
     {
@@ -111,7 +111,7 @@ void searchProductPrice(product *p[], int index)
         scanf("%d", &max);
     }while(max < 1);
 
-	listProduct();
+	printList();
 
     for(int i=0; i< index; i++)
     {
@@ -139,7 +139,7 @@ void searchProductStars(product *p[], int index)
         scanf("%d", &stars);
     }while(stars < 1 || stars > 5);
 
-	listProduct();
+	printList();
 
     for(int i=0; i< index; i++)
     {
@@ -167,7 +167,7 @@ void searchProductReviews(product *p[], int index)
         scanf("%d", &min);
     }while(min < 1);
 
-	listProduct();
+	printList();
 
     for(int i=0; i< index; i++)
     {

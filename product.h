@@ -1,5 +1,5 @@
 // 21800779 한시온
-// OSSL Mini Project 1
+// OSSL Mini Project
 
 #ifndef __PRODUCT_H__
 #define __PRODUCT_H__
@@ -36,10 +36,11 @@ void printList(void);
 // 필요한 부분만 선택해서 수정할 수 있으며 유효하지 않은 값에 대한 예외 처리는 DO-WHILE문으로 다시 입력받도록 했다.
 void updateProduct(product *p);
 
-// 상품을 삭제할지 묻고 그 선택값을 반환하는 함수
-// 1을 반환할 경우 메인 함수에서 해당 포인터 변수에 NULL을 할당하고 동적할당 해제
+// 상품을 삭제하는 함수
+// 1을 반환할 경우 해당 포인터 변수에 NULL을 할당하고 동적할당 해제
 // 0을 반환할 경우 삭제 취소 메시지 출력
 int deleteData(product **p);
+
 // 메뉴를 출력하는 함수
 // CREATE, READ, UPDATE, DELETE, SEARCH, SAVE, EXIT
 int selectMenu(void);

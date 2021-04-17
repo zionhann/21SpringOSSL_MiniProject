@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "product.h"
 
-void listProductList(product *p[], int index)
+void listProduct(product *p[], int index)
 {
 	
 	listProduct();

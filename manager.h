@@ -4,7 +4,7 @@
 #define __MANAGER_H__
 #include "product.h"
 
-void listProductList(product *p[], int index);
+void listProduct(product *p[], int index);
 
 // 사용자로부터 상품의 번호를 입력받아 번호를 반환하는 함수
 // 상품 수정, 삭제 함수에서 쓰이며 입력받은 번호가 현재 인덱스를 넘어가거나 음수이거나 이미 삭제된 번호인 경우 다시 입력받도록 한다.

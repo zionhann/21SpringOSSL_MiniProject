@@ -44,7 +44,7 @@ void readProduct(product *p)
 }
 
 // 전체 등록된 상품 리스트를 출력하는 함수
-void listProduct(void)
+void printList(void)
 {
     printf("\n*****************상품 목록*********************************\n");
     printf("No   name      weight(kg)    price(won)   ratings   reviews\n");

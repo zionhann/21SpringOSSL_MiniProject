@@ -24,9 +24,9 @@ int createProduct(product *p);
 // 무게는 소수점 1자리까지만 출력한다.
 void readProduct(product *p);
 
-// 전체 등록된 상품 리스트를 출력하는 함수
-// 이전에 삭제를 통해서 NULL값이들어가 있는 포인터 변수는 readProduct() 함수를 실행하지 않는다.
-void listProduct(void);
+// 목록 리스트를 출력하는 함수
+// 상품 리스트 출력은 listProduct 함수이다.
+void printList(void);
 
 // 사용자로부터 상품의 번호를 입력받아 번호를 반환하는 함수
 // 상품 수정, 삭제 함수에서 쓰이며 입력받은 번호가 현재 인덱스를 넘어가거나 음수이거나 이미 삭제된 번호인 경우 다시 입력받도록 한다.

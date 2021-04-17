@@ -7,7 +7,7 @@ int main(void)
 {
         product *p[20];
         int menu, num, srchOption;
-        int count = loadDataList(p);
+        int count = loadData(p);
         int index = count;
         //CREATE, READ, UPDATE, DELETE, SEARCH, SAVE, EXIT
         while(1)
@@ -41,7 +41,7 @@ int main(void)
                 }
                 else
                 {
-                    listProductList(p, index);
+                    listProduct(p, index);
                 }
                 break;
                 //UPDATE
@@ -98,19 +98,19 @@ int main(void)
                                     printf("취소됨!\n");
                                     break;
                             case 1:
-                                    searchProductNameList(p, index);
+                                    searchProductName(p, index);
                                     break;
 
                             case 2:
-                                    searchProductPriceList(p, index);
+                                    searchProductPrice(p, index);
                                     break;
 
                             case 3:
-                                    searchProductStarsList(p, index);
+                                    searchProductStars(p, index);
                                     break;
 
                             case 4:
-                                    searchProductReviewsList(p, index);
+                                    searchProductReviews(p, index);
                                     break;
 
                             default:
@@ -135,7 +135,7 @@ int main(void)
                                         printf("ERROR!\n");
                                 else
                                 {
-                                        saveDataList(ffrt, p, count, index);
+                                        saveData(ffrt, p, count, index);
                                         printf("저장됨!\n");
                                         fclose(ffrt);
                                 }

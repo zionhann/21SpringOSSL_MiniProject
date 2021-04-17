@@ -18,11 +18,11 @@ int loadDataList(product *p[]);
 void saveDataList(FILE* ffrt, product *p[], int count, int index);
 
 // 검색
-void searchProductNameList(product *p[], int index);
+void searchProductName(product *p[], int index);
 
-void searchProductPriceList(product *p[], int index);
+void searchProductPrice(product *p[], int index);
 
-void searchProductStarsList(product *p[], int index);
+void searchProductStars(product *p[], int index);
 
-void searchProductReviewsList(product *p[], int index);
+void searchProductReviews(product *p[], int index);
 #endif

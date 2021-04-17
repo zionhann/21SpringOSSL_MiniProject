@@ -75,7 +75,7 @@ void saveDataList(FILE* ffrt, product *p[], int count, int index)
     }
 }
 
-void searchProductNameList(product *p[], int index)
+void searchProductName(product *p[], int index)
 {
     char search[20];
     int noResult = 1;   // 사용자가 입력한 조건에 맞는 상품이 없는 경우 데이터 없음 메시지 출력
@@ -100,7 +100,7 @@ void searchProductNameList(product *p[], int index)
         printf("=> 검색된 데이터 없음!\n");
 }
 
-void searchProductPriceList(product *p[], int index)
+void searchProductPrice(product *p[], int index)
 {
     int max;
     int noResult = 1; // 사용자가 입력한 조건에 맞는 상품이 없는 경우 데이터 없음 메시지 출력
@@ -128,7 +128,7 @@ void searchProductPriceList(product *p[], int index)
         printf("검색된 데이터가 없습니다!\n");
 }
 
-void searchProductStarsList(product *p[], int index)
+void searchProductStars(product *p[], int index)
 {
     int stars;
     int noResult = 1; // 사용자가 입력한 조건에 맞는 상품이 없는 경우 데이터 없음 메시지 출력
@@ -156,7 +156,7 @@ void searchProductStarsList(product *p[], int index)
         printf("검색된 데이터가 없습니다!\n");
 }
 
-void searchProductReviewsList(product *p[], int index)
+void searchProductReviews(product *p[], int index)
 {
     int min;
     int noResult = 1;

@@ -40,14 +40,6 @@ void updateProduct(product *p);
 // 1을 반환할 경우 메인 함수에서 해당 포인터 변수에 NULL을 할당하고 동적할당 해제
 // 0을 반환할 경우 삭제 취소 메시지 출력
 int deleteData(product **p);
-/*
-// 외부의 텍스트 파일을 불러와서 상품 리스트에 추가하는 함수
-// 파일을 성공적으로 불러온 경우 불러온 데이터 개수를 반환하여 인덱스(No)가 해당 값부터 시작하도록 한다.
-int loadData(product *p);
-
-// 상품 리스트를 외부의 파일에 저장하는 함수
-void saveData(FILE* ffrt, product *p);
-*/
 // 메뉴를 출력하는 함수
 // CREATE, READ, UPDATE, DELETE, SEARCH, SAVE, EXIT
 int selectMenu(void);

@@ -160,33 +160,6 @@ int deleteData(product **p)
         }
     }
 }
-/*
-// 외부의 텍스트 파일을 불러와서 상품 리스트에 추가하는 함수
-// 파일을 성공적으로 불러온 경우 불러온 데이터 개수를 반환하여 인덱스(No)가 해당 값부터 시작하도록 한다.
-int loadData(product *p) 
-{
-    FILE* ffrt = fopen("product.txt", "r");
-    if(ffrt == NULL)
-    {
-        printf("=> 파일 없음!\n");
-        return 0;
-    }
-    else
-    {
-    	        fscanf(ffrt, "%s %lf %d %d %d", p->name, &p->weight, &p->price, &p->rating, &p->review);
-		fclose(ffrt);
-    		printf("=> 로딩 성공!\n");
-    		return (p->name[0] == '\0' ? 0 : 1);
-    }
-}
-
-// 상품 리스트를 외부의 파일에 저장하는 함수
-void saveData(FILE* ffrt, product *p)
-{
-	if(p->name[0] != '\0')
-        	fprintf(ffrt, "%s %.1f %d %d %d", p->name, p->weight, p->price, p->rating, p->review);
-}
-*/
 int selectMenu(void)
 {
     int menu;

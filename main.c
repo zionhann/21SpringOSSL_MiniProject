@@ -86,9 +86,9 @@ int main(void)
                         printf("\n***검색종류***\n");
                         printf("0.취소\n");
                         printf("1.이름 검색\n");
-                        printf("2.설정 가격보다 낮은 가격만 검색\n");
-                        printf("3.설정 별점만 검색\n");
-                        printf("4.설정 리뷰수보다 높은 리뷰수만 검색\n");
+                        printf("2.설정한 가격 이하의 상품 검색\n");
+                        printf("3.설정한 별점의 상품 검색\n");
+                        printf("4.설정한 리뷰수 이상의 상품 검색\n");
                         printf("번호 선택: ");
                         scanf("%d", &srchOption);
 

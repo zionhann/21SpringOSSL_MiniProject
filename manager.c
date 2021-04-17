@@ -32,7 +32,7 @@ int selectDataNo(product *p[], int index)
     return num;
 }
 
-int loadDataList(product *p[]) 
+int loadData(product *p[]) 
 {
     int c = 0;
     FILE* ffrt = fopen("product.txt", "r");
@@ -59,7 +59,7 @@ int loadDataList(product *p[])
     }
 }
 
-void saveDataList(FILE* ffrt, product *p[], int count, int index)
+void saveData(FILE* ffrt, product *p[], int count, int index)
 {
     count = count -1;
     for(int i=0; i<index; i++)

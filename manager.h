@@ -12,10 +12,10 @@ int selectDataNo(product *p[], int index);
 
 // 외부의 텍스트 파일을 불러와서 상품 리스트에 추가하는 함수
 // 파일을 성공적으로 불러온 경우 불러온 데이터 개수를 반환하여 인덱스(No)가 해당 값부터 시작하도록 한다.
-int loadDataList(product *p[]);
+int loadData(product *p[]);
 
 // 상품 리스트를 외부의 파일에 저장하는 함수
-void saveDataList(FILE* ffrt, product *p[], int count, int index);
+void saveData(FILE* ffrt, product *p[], int count, int index);
 
 // 검색
 void searchProductName(product *p[], int index);

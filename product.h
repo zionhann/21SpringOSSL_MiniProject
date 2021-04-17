@@ -37,8 +37,8 @@ void printList(void);
 void updateProduct(product *p);
 
 // 상품을 삭제하는 함수
-// 1을 반환할 경우 해당 포인터 변수에 NULL을 할당하고 동적할당 해제
-// 0을 반환할 경우 삭제 취소 메시지 출력
+// 삭제: 해당 포인터 변수에 NULL을 할당하고 동적할당 해제, 1반환(count--;)
+// 취소: 0반환(main함수에서 삭제 취소 메시지 출력)
 int deleteData(product **p);
 
 // 메뉴를 출력하는 함수

@@ -47,21 +47,6 @@ int loadData(product *p);
 
 // 상품 리스트를 외부의 파일에 저장하는 함수
 void saveData(FILE* ffrt, product *p);
-
-// 상품 이름을 검색하여 관련있는 상품을 출력하는 함수
-void searchProductName(product *p);
-
-// 상품 가격 기준으로 검색하는 함수
-// 사용자가 입력한 가격을 기준으로 낮은 가격의 상품은 모두 출력
-void searchProductPrice(product *p);
-
-// 상품 별점 기준으로 검색하는 함수
-// 사용자가 입력한 별점을 기준으로 해당 별점의 상품 출력
-void searchProductStars(product *p);
-
-// 상품 리뷰수 기준으로 검색하는 함수
-// 사용자가 입력한 리뷰수를 기준으로 해당 리뷰수보다 많은 리뷰수를 가진 상품 출력
-void searchProductReviews(product *p);
 */
 // 메뉴를 출력하는 함수
 // CREATE, READ, UPDATE, DELETE, SEARCH, SAVE, EXIT
